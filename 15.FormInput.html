@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> <!--action="process.php" şeklinde bir php dosyası gönderebilirsin-->
+        <!--Inputs-->
+        <label for="nameSurname">Name Surname</label> <br>
+        <input type="text" id="nameSurname" name="userName" placeholder="Your Name"> <br>
+        <label for="email">e-mail</label> <br>
+        <input type="email" id="email" name="userEmail"> <br>
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" name="userPassword"> <br>
+        <br><label for="date" id="date">Date</label> <br>
+        <input type="date" id="date" name="currentDate"> <br>
+        <br>Gender <br>
+        Male
+        <input type="radio" name="gender" id="male">
+        Female
+        <input type="radio" name="gender" id="female">
+        Other
+        <input type="radio" name="gender" id="other" checked> <br> <!--checked ile direkt seçili gelir-->
+
+        <br>Hobbies <br>
+        TECH
+        <input type="checkbox" name="tech" id="tech">
+        ART
+        <input type="checkbox" name="art" id="art">
+        SPORT
+        <input type="checkbox" name="sport" id="sport"> <br>
+        <input type="text" name="" id="">
+        <br>Degree
+        <select name="degree" id="degree"> 
+            <option value="bachelor">Lisans</option>
+            <option value="msc">MSc</option>
+            <option value="phd" selected>Doktora</option>
+        </select> <br>
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea> <br>
+        
+        <input type="reset" value="Reset">
+        <input type="submit" value="Send">
+
+       <!--  <button type="submit">Send</button> type submit olmak zorunda-->
+    </form>
+</body>
+</html>
